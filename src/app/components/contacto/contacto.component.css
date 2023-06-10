@@ -1,0 +1,165 @@
+#contact {
+    background-color: rgba(0,0,0, 0.09) ;      
+    max-width: 800px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    border-radius: 10px;
+    
+}
+
+
+.form_input {
+    
+    
+    margin: 9px 0;
+    width: 700px;
+    padding:4px;
+    border: none;
+    border-bottom: 3px solid #64171e;
+    background: transparent;
+    color: #fff;
+    transition: all 0.4s;
+
+}
+
+.form_input:focus {
+    background: linear-gradient(to bottom, transparent,rgb(36, 36, 36));
+    outline: none;
+    border-bottom: 3px solid #dc3545;
+    transition: all 0.6s;
+}
+
+.form textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.form_input[type="submit"] {
+    background-color:transparent;       
+    border: solid #dc3545;
+    padding: 10px;
+    width: 100px;        
+    border-radius: 10px;     
+    margin: auto;
+    margin-top: 20px;
+    
+    
+}
+
+.form_input[type="submit"]:hover {
+    background-color:#dc3545;
+    border: solid #dc3545;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    transition: all .8s;
+}
+
+.form_input[type="submit"]:focus {
+    background-color:#dc3545;
+    border: solid #dc3545;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    transition: all .8s;
+}
+
+.form_input[type="submit"]:active {
+    background: linear-gradient(to bottom,#dc3545,#aa1a2a);
+}
+
+.button_1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.video-cuerpo {   
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)), url(../../../assets/fondo.jpg);
+        
+}
+
+.cuerpo {
+    
+    z-index: 2; 
+    top:300px;
+    text-align: center;        
+    overflow: hidden;
+}
+
+
+.h22 {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size:1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    padding-bottom:50px;   
+     
+    z-index: 2;
+    
+}
+
+.h22::after,.h22::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: #dc3545;
+    top:0.6em;
+    transform:scale(0);
+    transition: all 0.3s ease-in;
+}
+
+
+.h22:hover::before, .h22:hover::after{
+    transform:scale(1)
+    
+    
+}
+
+
+.h22::before{
+    left:-140px;
+}
+
+.h22::after {
+    right:-140px;
+}
+
+
+@media screen and (max-width:700px) {
+    
+    #contact {
+        width:80%;
+    }
+
+    .form_input {
+        
+        width: 100%;
+        outline: none;
+        border-bottom: 3px solid #dc3545;
+        transition: all 0.6s;
+    }
+
+    .form_input:focus {
+        background: linear-gradient(to bottom, transparent,rgb(36, 36, 36));
+        outline: none;
+        width: 100%;
+        border-bottom: 3px solid #dc3545;
+        transition: all 0.6s;
+    }
+    
+}

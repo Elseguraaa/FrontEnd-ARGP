@@ -1,0 +1,84 @@
+<div class="video-cuerpo"> 
+    <section class="cuerpo"> 
+
+
+
+
+<div class="container-lg">
+                
+    <section id="curriculum" class="curriculum">
+           
+
+        <div class="contenido-seccion">
+
+            <h1 class="h22" id="info">Experiencia</h1> 
+            <br>
+            <br>
+            
+                <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Agregar Experiencia
+                </button>
+            
+                <br>
+                <br>
+               
+            
+            <div class="fila" *ngFor="let Experiencia of expe">
+                
+                <div class="col izquierda" >
+
+                    <div class="item izq" >
+                        
+                        <span class="casa">{{Experiencia.nombreEx}}</span>
+                        <br>
+                        <p>{{Experiencia.descripcionEx}}</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <br>
+
+                        
+                        <td *ngIf="isLogged">
+                            <button id="botoneww" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                
+                                
+                            
+                        <td *ngIf="isLogged">
+                            <button id="botonew"class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </td>
+                    
+                    
+
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</div>

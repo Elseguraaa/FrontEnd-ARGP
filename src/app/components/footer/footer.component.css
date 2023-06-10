@@ -1,0 +1,71 @@
+
+.barra-bottom {          
+    position: absolute;       
+    width: 100%;
+    border-bottom: 3px solid #af222e ;
+   
+    
+ 
+}
+
+
+.footer-content{  
+    background: rgb(12, 12, 12);      
+    text-align: center;
+    width: auto;
+    height: auto;
+    
+}
+
+.footer-content p{
+    color: #fff;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;     
+}
+.footer-content span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(121, 122, 122);
+}
+
+.footer-bottom {
+    padding: 10px 0 30px 0; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

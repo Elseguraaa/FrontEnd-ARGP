@@ -1,0 +1,37 @@
+
+
+  <section id="body">
+
+
+
+    
+    <div class="container" *ngIf="expLab">
+
+    <section class="form-register">
+    
+        <h4>Editar experiencia</h4>
+    
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm"> 
+    
+        <div class="form-group"> 
+        <input class="controls" type="text" name="nombreEx" id="nombreEx" placeholder="Nombre de la empresa" [(ngModel)]="expLab.nombreEx" required>
+        </div>
+    
+
+        <div class="form-group"> 
+            <input class="controls" type="text" name="descripcionEx" id="descripcionEx" placeholder="Descripcion" [(ngModel)]="expLab.descripcionEx" required>
+        </div>
+
+
+    
+    
+        
+        <input class="botons" type="submit" value="Editar">
+        
+        </form>
+    
+      </section>
+
+    </div>
+      
+    </section>

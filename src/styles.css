@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+    
+    
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(216, 216, 216);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:#dc3545;
+    border-radius: 5px;
+    
+}
+

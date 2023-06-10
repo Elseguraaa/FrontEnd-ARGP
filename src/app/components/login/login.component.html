@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+<section id="body">
+    <div class="box">
+		<form autocomplete="off">
+
+
+
+			<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+			<h2>Ingresar</h2>
+			<div class="inputBox">
+				<input type="user" id="alias" name="alias" required="required" [(ngModel)]="alias" name="alias" required>
+				<span>Nombre</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password"  id="password" required="required" [(ngModel)]="password" name="password" required>
+				<span>Contraseña</span>
+				<i></i>
+			</div>
+            <div class="links">
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>		
+			<input type="submit" value="Login">
+
+
+		</form>
+
+		</form>
+	</div>
+
+
+    <ul >
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f icon"></i>    </a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter icon"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+        <li>
+          <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+      </ul>
+
+
+</section>
+
+
+
+

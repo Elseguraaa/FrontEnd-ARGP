@@ -1,0 +1,102 @@
+<div class="video-cuerpo"> 
+    <section class="cuerpo"> 
+
+<br>
+
+<section class="section" >
+    <div class="containerr">
+        <section id="sobremi">
+        <h1 class="h22" id="info">Sobre mí</h1> 
+        <div class="about-row">
+            <div class="about-row-experience">
+                <p id="p_1">¡Hola! mi nombre es Lucas Segura, Soy oriundo de San Luis capital Argentina. Apasionado a todo lo relacionado a la tecnología, a punto a crecer profesionalmente como Desarrollador Web Fullstack.
+                    <br>
+                    Actualmente soy estudiante en la tecnicatura "Desarrollo de software" en la Universidad De La Punta y estudiante en el programa "Argentina Programa"   <br>
+                    <br>
+                    Desde muy joven me llamo la atención el diseño gráfico, así que me fui incursionando en ese mundo de forma autodidacta. <br>
+                    Tengo experiencia utilizando Photosop Cs6,Adobe Ilustrator y editores de videos como Adobe After Effects y Adobe Premiere. <br>
+
+                </p> 
+                
+                
+                <div class="container-lg">
+                
+                <section id="curriculum" class="curriculum">
+                       
+
+                    <div class="contenido-seccion">
+
+                        <h1 class="h22" id="info">Educacion</h1> 
+                        <br>
+                        <br>
+                        
+                            <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                                Agregar Educacion
+                            </button>
+                        
+                            <br>
+                            <br>
+                           
+                        
+                        <div class="fila" *ngFor="let Educacion of educacion">
+                            
+                            <div class="col izquierda" >
+
+                                <div class="item izq" >
+                                    
+                                    <span class="casa">{{Educacion.nombreE}}</span>
+                                    <br>
+                                    <p>{{Educacion.descripcionE}}</p>
+                                    <div class="conectori">
+                                        <div class="circuloi"></div>
+                                    </div>
+                                    <br>
+
+                                    
+                                    <td *ngIf="isLogged">
+                                        <button id="botoneww" class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                            
+                                            
+                                        
+                                    <td *ngIf="isLogged">
+                                        <button id="botonew"class="btn btn-danger" (click)="delete(Educacion.id)">
+                                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                    </td>
+                                
+                                
+
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+            
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            
+
+                
+    
+            </div>             
+        </div>
+    </section>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</section>
+</div>

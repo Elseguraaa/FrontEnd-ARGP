@@ -1,0 +1,28 @@
+
+<section id="body">
+
+
+    <section class="form-register">
+    
+        <h4>Agregar skill</h4>
+    
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm"> 
+    
+        <div class="form-group"> 
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre de la skill" [(ngModel)]="nombre" required>
+        </div>
+    
+    
+        <div class="form-group"> 
+            <input class="controls" type="text" name="porcentaje" id="porcentaje" placeholder="Porcentaje de la skill" [(ngModel)]="porcentaje" required>
+        </div>
+    
+    
+        
+        <input class="botons" type="submit" value="Crear!">
+        
+        </form>
+    
+      </section>
+      
+    </section>

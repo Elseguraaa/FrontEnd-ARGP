@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<div class="video-cuerpo"> 
+    <section class="cuerpo"> 
+
+        <br>
+        <h1 class="h22" id="info">Skills</h1> 
+        <br>
+        <br>
+        <button type="button" id="b-skill" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged">
+            Agregar Skill
+        </button>
+
+        <div class="row"> 
+
+
+                
+                <br>
+
+
+
+                    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">   
+                        <circle-progress
+                        [percent]="(skill.porcentaje)"
+                        [backgroundGradient]="true"                      
+                        [radius]="100"
+                        [space]="-10"
+                        [outerStrokeGradient]="true"
+                        [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#ff0000'"
+                        [outerStrokeGradientStopColor]="'#ff0000'"
+                        [innerStrokeColor]="'#1f1f1f'"
+                        [title]="(skill.nombre)"
+                        [titleColor]= "'#ffffff'"
+                        [subtitleColor]= "'#ffffff'"
+                        [animateTitle]="false"
+                        [animationDuration]="1000"
+                        [showUnits]="false"
+                        [showSubtitle]="false"
+                        [showBackground]="false"
+                        [clockwise]="false"
+                        [startFromZero]="true"
+                        [lazy]="true"
+
+                        
+                      ></circle-progress>
+
+                      <td *ngIf="isLogged">
+                        <button id="botoneww" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button></td>
+                            
+                            
+                        <br>
+                    <td *ngIf="isLogged">
+                        <button id="botonew"class="btn btn-danger" (click)="delete(skill.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                    
+
+                    
+
+                    
+
+
+                </div>
+
+                <br>
+
+
+
+
+
+
+            </div>
+                </section>
+            </div>

@@ -1,0 +1,41 @@
+
+<div class="container">
+
+    <div class="info">
+
+        <button name="boton1" class="boton2" (click)="login()" *ngIf="!isLogged"> Ingresar</button>
+        <button name="boton1" class="boton2" (click)="onLogOut()" *ngIf="isLogged"> Salir</button>
+
+
+                <button type="button" class="btn btn-dark" routerLink="/editinicio/1" *ngIf="isLogged">
+                    Editar
+                </button>
+
+        <div class="info-persona">            
+            <div class="foto-mia"><app-foto-mia></app-foto-mia>
+            </div>
+            <span> {{persona.nombre}} {{persona.apellido}}</span> 
+            <p>{{persona.descripcion}}</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" id="selectionn">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>                   
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>   
+    </div>
+    
+
+    <section class="portada">
+        <h1>{{persona.nombre}} <span class="rojo">{{persona.apellido}}</span></h1>
+        <p>Argentina Programa</p>
+        <button name="boton1" class="boton1"> <a href="#sobremi" class="button_1">Sobre mí</a> </button>  
+
+    </section>
+
+
+    
+</div>

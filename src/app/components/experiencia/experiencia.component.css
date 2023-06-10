@@ -1,0 +1,282 @@
+/* About */
+#about {
+	padding: 80px 0;
+	
+}
+
+.about-row {
+	margin: auto;
+    width: 90%;
+}
+
+    .info {
+        padding-top:50px;
+    }
+    
+    
+ 
+    
+    .large {
+        font-size: 20px;
+    }
+
+
+    p {
+        color:#fff;
+        z-index: 2;
+    }
+
+    #p_1 {
+        color: #ccc !important;
+        font-family:'Open Sans', sans-serif  !important;
+        font-size: 1.1rem !important ;
+        line-height: 1.6 !important ;
+        margin-top: .5rem !important;
+        padding-bottom: 30px !important;
+        
+        
+        
+    }
+
+    
+
+    #info {
+        padding-bottom:20px !important;  
+    }
+
+
+    .h22 {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        font-size:1.8rem;
+	    text-align: center;
+	    text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif; 
+	    font-weight: 600;
+	    padding-bottom:50px;   
+         
+        z-index: 2;
+        
+    }
+
+    .h22::after,.h22::before{
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: #dc3545;
+        top:0.6em;
+        transform:scale(0);
+        transition: all 0.3s ease-in;
+    }
+
+    
+    .h22:hover::before, .h22:hover::after{
+        transform:scale(1)
+        
+        
+    }
+    
+
+    .h22::before{
+        left:-140px;
+    }
+
+    .h22::after {
+        right:-140px;
+    }
+
+    
+
+    .conteiner_ul {
+        position: relative;
+        margin-left: 290px;   
+        background-color: rgba(0,0,0, 0.09) ;   
+        width: 750px;
+        height:100px;
+        overflow: hidden;
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    #h1-id {
+        top:40px;
+    }
+
+    .video-cuerpo {   
+        width: 100%;
+        background: linear-gradient(
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.5)), url(../../../assets/fondo.jpg);
+            
+    }
+    
+    .cuerpo {
+        
+        z-index: 2; 
+        top:300px;
+        text-align: center;        
+        overflow: hidden;
+    }
+
+    
+
+    .barra-top {             
+        position: absolute;       
+        z-index: 2;
+        width: 100%;
+        border-bottom: 3px solid #af222e ;
+        
+     
+    }
+
+    .curriculum{ 
+        color: #fff;
+        padding: 50px 20px;
+    }
+    .curriculum .contenido-seccion{
+        max-width: 1100px;
+        margin: auto;
+    }
+    
+    .curriculum .fila{
+        display: flex;
+        justify-content: space-between;
+    }
+    .curriculum .fila .col{
+        width: 49%;
+        padding: 0 20px;
+    }
+    
+    
+
+    .curriculum .fila .item{
+        padding: 25px;
+        margin-bottom: 30px;
+        background-color: rgba(0,0,0, 0.09) ;
+        position: relative;
+        border-radius: 6px;
+    }
+    .curriculum .fila .item h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .curriculum .fila .item .casa{
+        color: #dc3545;
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+    }
+    .curriculum .fila .item .fecha{
+        display: block;
+        color: #dc3545;
+        margin-bottom: 10px;
+    }
+    .curriculum .fila .item p{
+        line-height: 24px;
+    }
+    .curriculum .fila .izq{
+        border-right: 2px solid #dc3545;
+        margin-right: 20px;
+    }
+
+    .curriculum .fila .izq{
+        border-left: 2px solid #dc3545;
+        margin-left: 20px;
+    }
+    
+    .curriculum .fila .item .conectori{
+        background-color: #dc3545;
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 30%;
+        background-image: linear-gradient(to right, #dc3545,#dc3545);
+        right: 50%;
+        top:100%;
+
+        z-index: 5;
+    }
+    .curriculum .fila .item .conectori .circuloi{
+        
+        height: 15%;
+        width: 2px;
+        background-color: #dc3545;
+        position: relative;
+        top: 100%;
+        
+    }
+    
+    @media screen and (max-width:700px) {
+        .curriculum .fila{
+            display: block;
+        }
+        .curriculum .fila .col{
+            width: 95%;
+        }
+        .curriculum .fila .derecha{
+            margin-left: 100px;
+        }
+        .curriculum .fila .item .conectori{
+            background-color: #dc3545;
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 30%;
+            background-image: linear-gradient(to right, #dc3545,#dc3545);
+            right: 50%;
+            top:100%;
+            opacity: 0;
+            z-index: 5;
+        }
+        .curriculum .fila .item .conectori .circuloi{
+        
+            height: 15%;
+            width: 2px;
+            background-color: #dc3545;
+            position: relative;
+            top: 100%;
+            opacity: 0;
+        }
+
+        #botonew {
+        
+        margin-bottom: 35%;             
+        /*margin-right: 17%;*/
+        }
+
+        #botoneww {
+            margin-bottom: 35%;            
+            /*margin-left: 12%;*/
+            
+            }
+
+            
+        
+            
+        
+            
+        
+            
+        
+            
+
+        }
+            
+
+    #botonew {
+        position: absolute;
+        right: 3%;
+        
+    }
+
+    #botonew:hover {
+        background-color: rgb(143, 7, 7);
+        transition: all 0.2s;
+    }
+
+    #botoneww:hover {
+        background-color: rgb(216, 216, 216);
+        transition: all 0.1s;
+    }
